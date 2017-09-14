@@ -47,7 +47,7 @@ screens with the same DPI (except for old GTK, Wine, Java and some other
 things that require custom tweaks). But when you connect a display with
 different DPI you are getting into trouble! At first none of window
 managers supports different DPI on multiple screens. At all. Well,
-Gnome on Wayland support it but it's immature yet and scaling works only
+Gnome on Wayland supports it but it's immature yet and scaling works only
 for Gnome apps. It means that when you launch or move something to a
 screen with a lower DPI it will be huge or the way around.
 OK, I'm ready for compromises, what if I downscale laptop's resolution to
@@ -70,7 +70,7 @@ with a NIC in the dock station. I hit a bug related to dock's USB controller dri
 There was a patch, but XHCI is compiled into a kernel, so there is no
 way to build a DKMS package and the least thing I wanted was to maintain
 my own kernel build. So I had to apply a workaround and limit NIC speed
-to 100Mbit/s. BTW in August it finally got into a stable kernel and already
+to 100Mbit/s. BTW in August it eventually got into a stable kernel and already
 backported to Ubuntu mainline.
 
 Finally I was able to get back to work.
