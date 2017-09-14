@@ -3,11 +3,15 @@
   {% capture script_extra %}{% include _scripts/pages/post-details.html %}{% endcapture %}
 {% when 'archive' %}
   {% capture script_extra %}
-    {% if site.use_motion %}
       <script type="text/javascript" id="motion.page.archive">
+        {% if site.use_motion %}
         $('.archive-year').velocity('transition.slideLeftIn');
+        {% else %}
+        if (!document.referrer.includes(window.location.hostname)) {
+          $('.archive-year').velocity('transition.slideLeftIn');
+        }
+        {% endif %}
       </script>
-    {% endif %}
     {% include _scripts/pages/pagination.html %}
   {% endcapture %}
 {% when 'category' %}
