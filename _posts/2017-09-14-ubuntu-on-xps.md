@@ -97,3 +97,5 @@ Of course I faced other issues later. For example [BUG
 recent one (fixed in hwe-16.04-edge). But I have no regrets. I was really
 missing those insides you get every time something requires a fix while
 using OS X.
+
+![screenshot](/assets/images/content/screenshot.png)
