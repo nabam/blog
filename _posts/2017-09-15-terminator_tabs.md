@@ -25,7 +25,13 @@ And it's possible to override almost every design aspect of any GTK-3 applicatio
 Overrides can be defined in `~/.config/gtk-3.0/gtk.css` file. That is what I ended
 up with there:
 
+*UPD 2018: This style is supposed to work on bionic*
+{% gist nabam/cd8cfbff69e3ca37594f7345281022ae gtk.css %}
+<details><summary><i>Original snippet</i></summary>
+<p>
 {% gist nabam/efcd7e3aaf649a88082a516de5027e89 gtk.css %}
+</p>
+</details>
 
 That is how it looks:
 
